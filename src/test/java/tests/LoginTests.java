@@ -1,41 +1,38 @@
 package tests;
 
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-public class LoginTests extends TestBase{
+public class LoginTests extends TestBase {
 
+    @BeforeMethod
+    public void preCondition(){
+        if(app.getUserHelper().isLogged()){
+            app.getUserHelper().logout();
+
+        }
+    }
 
 
     @Test
     public void successLogin(){
-        //open form
-        openLoginRegistrationForm();
 
-        //fill form
-        fillLoginRegistrationForm("noa@gmail.com","Nnoa12345$");
+        app.getUserHelper().openLoginRegistrationForm();
+        app.getUserHelper().fillLoginRegistrationForm("noa@gmail.com","Nnoa12345$");
+        app.getUserHelper().submitLogin();
 
-        //login
-        submitLogin();
 
-        //assert
 
     }
+
     @Test
-    public void loginNegativeTestWrongEmail(){
-        //open form
-       openLoginRegistrationForm();
-        //fill form invalid data
-       fillLoginRegistrationForm("noagmail.com","Nnoa12345$");
-        //login
-        submitLogin();
-        //assert(log success?) logout present ? not
-
+    public void loginNegativeTestWrongEmail() {
+        app.getUserHelper().openLoginRegistrationForm();
+        app.getUserHelper().fillLoginRegistrationForm("noagmail.com", "Nnoa12345$");
+        app.getUserHelper().submitLogin();
 
 
     }
-
-
-
 
 
 }
