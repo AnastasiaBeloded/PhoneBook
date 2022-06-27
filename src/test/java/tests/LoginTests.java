@@ -9,13 +9,13 @@ public class LoginTests extends TestBase {
     public void preCondition(){
         if(app.getUserHelper().isLogged()){
             app.getUserHelper().logout();
-
         }
+
     }
 
 
     @Test
-    public void successLogin(){
+    public void loginASuccess(){
 
         app.getUserHelper().openLoginRegistrationForm();
         app.getUserHelper().fillLoginRegistrationForm("noa@gmail.com","Nnoa12345$");
