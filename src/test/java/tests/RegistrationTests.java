@@ -18,10 +18,12 @@ public class RegistrationTests extends TestBase {
 
     @Test
     public void registrationSuccess() {
+        int i = (int)System.currentTimeMillis()/1000;
         app.getUserHelper().openLoginRegistrationForm();
-        app.getUserHelper().fillLoginRegistrationForm("noa003@gmail.com", "Nnoa12345$");
+        app.getUserHelper().fillLoginRegistrationForm("noa"+i+"@gmail.com", "Nnoa12345$");
         app.getUserHelper().submitRegistration();
 
     }
+
 
 }
