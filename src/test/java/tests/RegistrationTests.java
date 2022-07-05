@@ -15,7 +15,6 @@ public class RegistrationTests extends TestBase {
 
     }
 
-
     @Test
     public void registrationSuccess() {
         int i = (int)System.currentTimeMillis()/1000;

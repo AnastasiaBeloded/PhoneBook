@@ -11,7 +11,6 @@ public class LoginTests extends TestBase {
         if(app.getUserHelper().isLogged()){
             app.getUserHelper().logout();
         }
-
     }
 
     @Test
@@ -22,8 +21,6 @@ public class LoginTests extends TestBase {
         app.getUserHelper().submitLogin();
 
         Assert.assertTrue(app.getUserHelper().isLogged());
-
-
 
     }
 
@@ -36,8 +33,6 @@ public class LoginTests extends TestBase {
         Assert.assertFalse(app.getUserHelper().isLogged());
         Assert.assertTrue(app.getUserHelper().isAlertDisplayed());
         Assert.assertTrue(app.getUserHelper().isErrorFormatDisplay());
-
-
 
     }
 
