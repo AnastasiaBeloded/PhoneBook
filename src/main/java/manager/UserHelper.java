@@ -1,5 +1,5 @@
 package manager;
-
+import contacts.Contact;
 import contacts.User;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
@@ -73,19 +73,11 @@ public class UserHelper extends HelperBase {
         return errorText.contains("Wrong email or password format");
     }
 
-    public void openAddContactForm() {
-        click(By.cssSelector("a[href='/add']"));
-    }
 
-    public void fillNewContactForm(User user) {
-        type(By.cssSelector("input[placeholder='Name']"),user.getName());
-        type(By.cssSelector("input[placeholder='Last Name']"),user.getLastName());
-        type(By.cssSelector("input[placeholder='Phone']"),user.getPhone());
-        type(By.cssSelector("input[placeholder='email']"),user.getEmail());
-        type(By.cssSelector("input[placeholder='Address']"),user.getAddress());
-        type(By.cssSelector("input[placeholder='description']"),user.getDescription());
-        click(By.cssSelector("div[class='add_form__2rsm2'] button"));
-
-
+    public void login(User user) {
+        openLoginRegistrationForm();
+        type(By.xpath("//input[1]"), user.getEmail());
+        type(By.xpath("//input[2]"), user.getPassword());
+        submitLogin();
     }
 }
