@@ -1,0 +1,4 @@
+2410 [Test worker] INFO  manager.ApplicationManager - All tests run in chrome browser
+3188 [Test worker] INFO  manager.ApplicationManager - Current Url---->https://contacts-app.tobbymarshall815.vercel.app/home
+20:41:15.081  INFO  manager.ApplicationManager - All tests run in chrome browser
+20:41:15.868  INFO  manager.ApplicationManager - Current Url---->https://contacts-app.tobbymarshall815.vercel.app/home

@@ -1,0 +1,7 @@
+20:59:50.962  INFO  manager.ApplicationManager - All tests run in chrome browser
+20:59:51.746  INFO  manager.ApplicationManager - Current Url---->https://contacts-app.tobbymarshall815.vercel.app/home
+20:59:51.769  INFO  tests.TestBase - Start method with name--->createNewContact
+20:59:58.723  INFO  tests.TestBase - Start method with name--->createNewContact
+21:00:00.110  INFO  tests.TestBase - Start method with name--->createNewContact
+21:00:01.526  INFO  tests.TestBase - Start method with name--->createNewContact
+21:00:03.177  INFO  tests.TestBase - Start method with name--->createNewContact

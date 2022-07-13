@@ -55,6 +55,7 @@ public class HelperContact extends HelperBase{
         int countBefore  = countOfContacts();
         System.out.println(countBefore);
         if(!isContactListEmpty()){
+            logger.info("List is  empty");
             click(By.cssSelector(".contact-item_card__2SOIM"));
             click(By.xpath("//button[text()='Remove']"));
             pause(500);
