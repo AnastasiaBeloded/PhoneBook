@@ -17,7 +17,7 @@ public class LoginTests extends TestBase {
     public void loginSuccess(){
 
         app.getUserHelper().openLoginRegistrationForm();
-        app.getUserHelper().fillLoginRegistrationForm("noa@gmail.com","Nnoa12345$");
+        app.getUserHelper().fillLoginRegistrationForm("mia@gmail.com","Mmia12345$");
         app.getUserHelper().submitLogin();
 
         Assert.assertTrue(app.getUserHelper().isLogged());

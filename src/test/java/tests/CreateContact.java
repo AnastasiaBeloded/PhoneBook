@@ -12,13 +12,14 @@ public class CreateContact extends TestBase{
     @BeforeMethod
     public void preCondition() {
         if (!app.getUserHelper().isLogged()) {
-            app.getUserHelper().login(new User().setEmail("noa@gmail.com").setPassword("Nnoa12345$"));
+            app.getUserHelper().login(new User().setEmail("mia@gmail.com").setPassword("Mmia12345$"));
         }
+
 
 
     }
 
-    @Test
+    @Test(invocationCount = 5)
     public void createNewContact(){
         Random random = new Random();
         int i = random.nextInt(1000)+1000;
@@ -27,7 +28,7 @@ public class CreateContact extends TestBase{
                 .name("Mia"+i)
                 .lastName("Bio"+i)
                 .email("miaBio@gmail.com")
-                .phone("0527899879")
+                .phone("052789"+i)
                 .address("NY")
                 .description("Friend").build();
 
@@ -36,6 +37,7 @@ public class CreateContact extends TestBase{
         app.contact().saveContact2();
 
         Assert.assertTrue(app.contact().isContactAddedByName(contact.getName()));
+        Assert.assertTrue(app.contact().isContactAddedByPhone(contact.getPhone()));
 
 
 
