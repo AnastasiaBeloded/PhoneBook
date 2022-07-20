@@ -10,6 +10,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 import java.util.List;
+import java.util.Random;
 
 public class UserHelper extends HelperBase {
 
@@ -36,7 +37,10 @@ public class UserHelper extends HelperBase {
     }
 
     public void fillLoginRegistrationForm(String email, String password) {
+        Random random = new Random();
+        int i = random.nextInt(1000) + 1000;
         type(By.xpath("//input[1]"), email);
+        takeScreenShots("src/test/screenshots-screen-"+i+".png");
         type(By.xpath("//input[2]"), password);
 
     }

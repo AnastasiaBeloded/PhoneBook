@@ -1,0 +1,19 @@
+20:19:31.013  INFO  manager.ApplicationManager - All tests run in chrome browser
+20:19:31.850  INFO  manager.ApplicationManager - Current Url---->https://contacts-app.tobbymarshall815.vercel.app/home
+20:19:31.874  INFO  tests.TestBase - Start method with name--->loginSuccess
+20:19:36.931  INFO  tests.TestBase - Test stars with email: mia@gmail.com and password: Mmia12345$
+20:19:36.932  INFO  manager.MyListener - WebDriver start find element---->By.cssSelector: [href$='/login']
+20:19:36.959  INFO  manager.MyListener - WebDriver found element by locator---->By.cssSelector: [href$='/login']
+20:19:37.010  INFO  manager.MyListener - WebDriver start find element---->By.xpath: //input[1]
+20:19:37.048  INFO  manager.MyListener - WebDriver found element by locator---->By.xpath: //input[1]
+20:19:37.842  INFO  manager.MyListener - WebDriver start find element---->By.xpath: //nput[2]
+20:19:42.888  INFO  manager.MyListener - The name of method with error-->findElement
+20:19:42.891  INFO  manager.MyListener - We have a problem--->org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//nput[2]"}
+  (Session info: chrome=103.0.5060.114)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.2.2', revision: '683ccb65d6'
+System info: host: 'DESKTOP-O54QV38', ip: '192.168.14.148', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [79b05bc92e6234024b01b32126c26da2, findElement {using=xpath, value=//nput[2]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 102.0.5005.27 (df4a85108ffa..., userDataDir: C:\Users\allan\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53079}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53079/devtoo..., se:cdpVersion: 103.0.5060.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 79b05bc92e6234024b01b32126c26da2

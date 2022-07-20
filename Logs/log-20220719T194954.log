@@ -1,0 +1,5 @@
+19:49:57.576  INFO  manager.ApplicationManager - All tests run in chrome browser
+19:49:58.384  INFO  manager.ApplicationManager - Current Url---->https://contacts-app.tobbymarshall815.vercel.app/home
+19:49:58.413  INFO  tests.TestBase - Start method with name--->loginNegativeTestWrongEmail
+19:50:13.972  INFO  tests.TestBase - Start method with name--->loginSuccess
+19:50:18.627  INFO  tests.TestBase - Test stars with email: mia@gmail.com and password: Mmia12345$
