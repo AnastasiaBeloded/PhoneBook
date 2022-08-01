@@ -40,10 +40,15 @@ public class UserHelper extends HelperBase {
         Random random = new Random();
         int i = random.nextInt(1000) + 1000;
         type(By.xpath("//input[1]"), email);
-        takeScreenShots("src/test/screenshots-screen-"+i+".png");
+      //  takeScreenShots("src/test/screenshots-screen-"+i+".png");
         type(By.xpath("//input[2]"), password);
 
     }
+    public void fillLoginRegistrationForm(User user){
+        type(By.xpath("//input[1]"), user.getEmail());
+        type(By.xpath("//input[2]"), user.getPassword());
+    }
+
 
     public boolean isLogged() {
         List<WebElement> list = wd.findElements(By.xpath("//button[text()='Sign Out']"));

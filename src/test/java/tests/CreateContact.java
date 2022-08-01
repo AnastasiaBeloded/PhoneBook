@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 import java.util.Random;
 
 public class CreateContact extends TestBase{
-    @BeforeMethod
+    @BeforeMethod(alwaysRun = true)
     public void preCondition() {
         if (!app.getUserHelper().isLogged()) {
             app.getUserHelper().login(new User().setEmail("mia@gmail.com").setPassword("Mmia12345$"));

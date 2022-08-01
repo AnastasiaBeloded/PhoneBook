@@ -1,0 +1,13 @@
+17:03:20.557  INFO  manager.ApplicationManager - All tests run in chrome browser
+17:03:21.419  INFO  manager.ApplicationManager - Current Url---->https://contacts-app.tobbymarshall815.vercel.app/home
+17:03:21.445  INFO  tests.TestBase - Start method with name--->loginSuccess
+17:03:26.480  INFO  tests.TestBase - Test stars with email: mia@gmail.com and password: Mmia12345$
+17:03:26.481  INFO  manager.MyListener - WebDriver start find element---->By.cssSelector: [href$='/login']
+17:03:26.508  INFO  manager.MyListener - WebDriver found element by locator---->By.cssSelector: [href$='/login']
+17:03:26.561  INFO  manager.MyListener - WebDriver start find element---->By.xpath: //input[1]
+17:03:26.614  INFO  manager.MyListener - WebDriver found element by locator---->By.xpath: //input[1]
+17:03:27.428  INFO  manager.MyListener - WebDriver start find element---->By.xpath: //input[2]
+17:03:27.451  INFO  manager.MyListener - WebDriver found element by locator---->By.xpath: //input[2]
+17:03:27.531  INFO  manager.MyListener - WebDriver start find element---->By.xpath: //button[1]
+17:03:27.548  INFO  manager.MyListener - WebDriver found element by locator---->By.xpath: //button[1]
+17:03:28.210  INFO  tests.TestBase - Test passed

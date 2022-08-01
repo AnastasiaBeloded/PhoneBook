@@ -6,7 +6,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 public class DeleteContact extends TestBase {
-    @BeforeMethod
+    @BeforeMethod(alwaysRun = true)
     public void preCondition() {
         if (!app.getUserHelper().isLogged()) {
             app.getUserHelper().login(new User().setEmail("mia@gmail.com").setPassword("Mmia12345$"));
